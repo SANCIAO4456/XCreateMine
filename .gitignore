@@ -1,0 +1,6 @@
+# Jangan upload file lokal ini ke GitHub
+ccminer
+*.log
+.vrsc_wallet
+config.sh
+.DS_Store
