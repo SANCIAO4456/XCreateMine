@@ -8,6 +8,20 @@ Setiap fungsi ada di file sendiri, tidak digabung jadi satu file.
 > password ke script mana pun di repo ini, dan jangan upload file
 > `.vrsc_wallet` kamu ke GitHub.
 
+## Penggunaan yang sesuai — baca dulu
+
+Repo ini hanya untuk dipakai di perangkat kamu sendiri, untuk belajar.
+Script di sini **hanya dijalankan di HP Android kamu lewat Termux**.
+Jangan pernah menjalankan mining lewat GitHub Actions, GitHub Codespaces,
+GitHub Pages, atau server GitHub lainnya, dan jangan memakai repo ini
+untuk aktivitas otomatis massal di GitHub.
+
+Repo ini bukan janji penghasilan, bukan skema cepat kaya, dan tidak
+terafiliasi dengan LuckPool atau Verus. Hasil mining kecil dan tidak
+bisa dijanjikan. Detail lengkapnya ada di `CATATAN-KEPATUHAN.md`.
+Tidak ada jaminan repo ini tidak akan di-flag oleh GitHub — kepatuhan
+di atas hanya mengurangi risiko, bukan menghilangkannya.
+
 ## Syarat
 
 - HP Android 64-bit (ARM64 / aarch64). Cek dengan `uname -m`, harus `aarch64`.
@@ -31,6 +45,9 @@ Setiap fungsi ada di file sendiri, tidak digabung jadi satu file.
 | `stop.sh` | Berhentikan mining (`ccminer`). |
 | `pools.md` | Daftar pool alternatif dan cara ganti pool. |
 | `troubleshooting.md` | Daftar error yang sudah pernah terjadi dan cara perbaikinya. |
+| `perbaiki-git.sh` | Perbaiki instalasi git di Termux yang gagal clone, lalu clone repo ini. |
+| `CATATAN-KEPATUHAN.md` | Aturan pakai repo ini supaya tidak melanggar kebijakan GitHub. |
+| `LICENSE` | Lisensi MIT untuk kode di repo ini. |
 | `.gitignore` | Supaya `ccminer`, log, dan file wallet lokal tidak ikut ter-upload. |
 
 ## Sekali salin, sekali jalan (paling mudah)
@@ -40,7 +57,7 @@ muncul. Jangan tempel perintah lain selagi perintah ini masih jalan,
 karena tiap langkah menunggu langkah sebelumnya selesai.
 
 ```bash
-cd ~; rm -rf mining; pkg update -y; pkg install -y git; pkg reinstall -y git; git clone https://github.com/GodXCreat/mining.git && cd mining && bash menu.sh
+cd ~; rm -rf XCreateMine; pkg update -y; pkg install -y git; pkg reinstall -y git; git clone https://github.com/SANCIAO4456/XCreateMine.git && cd XCreateMine && bash menu.sh
 ```
 
 Setelah menu muncul, pilih `1` untuk mining, lalu masukkan alamat wallet
